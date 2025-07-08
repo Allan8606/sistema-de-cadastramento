@@ -150,19 +150,61 @@ button:hover {
   background: #002244;
 }
 
+.search-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 @media (max-width: 600px) {
   .container {
-    padding: 12px 4vw 18px 4vw;
-    max-width: 98vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    width: auto;
+    max-width: 100vw;
+    padding: 8vw 4vw 18px 4vw;
+    box-sizing: border-box;
   }
   h1, h2 {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
   #result .cliente-info {
-    padding: 10px 6px 8px 10px;
+    padding: 10px 4vw 8px 4vw;
   }
   form {
-    padding: 12px 4vw 12px 4vw;
+    padding: 10vw 4vw 8vw 4vw;
+    border-radius: 12px;
+    min-width: 0;
+    box-sizing: border-box;
   }
+  input[type="text"] {
+    font-size: 0.98rem;
+  }
+  form button[type="submit"] {
+    font-size: 1rem;
+  }
+  .search-btns {
+    flex-direction: row !important;
+    gap: 8px;
+    align-items: center;
+  }
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+  margin-top: 10px;
+}
+
+.logo-img {
+  max-width: 180px;
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  background: transparent;
 }
   
