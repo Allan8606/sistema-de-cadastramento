@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financeiro - Sistema de Cadastramento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-bg">
+  <div class="container">
+    <div class="logo-container">
+      <img src="/REALIZACRED - LOGOTIPO SEM FUNDO (1).png" alt="Logo RealizaCred" class="logo-img">
+    </div>
+    <h1>Financeiro</h1>
+    <form id="financeiroForm">
+      <label for="salario">Salário Bruto:</label>
+      <input type="text" id="salario" required>
+
+      <label for="mes">Mês:</label>
+      <select id="mes" required style="width: 100%; padding: 10px 12px; margin: 0 0 2px 0; border: 1.2px solid #003366; border-radius: 10px; background: #f7f7f7; font-size: 1rem; transition: border 0.2s; box-sizing: border-box;">
+        <option value="">Selecione o mês</option>
+        <option value="janeiro">Janeiro</option>
+        <option value="fevereiro">Fevereiro</option>
+        <option value="marco">Março</option>
+        <option value="abril">Abril</option>
+        <option value="maio">Maio</option>
+        <option value="junho">Junho</option>
+        <option value="julho">Julho</option>
+        <option value="agosto">Agosto</option>
+        <option value="setembro">Setembro</option>
+        <option value="outubro">Outubro</option>
+        <option value="novembro">Novembro</option>
+        <option value="dezembro">Dezembro</option>
+      </select>
+
+      <!-- Remover o botão Adicionar do form e colocar na div .search-btns -->
+      </form>
+      <div class="search-btns">
+        <button type="submit" form="financeiroForm" class="home-btn">Adicionar</button>
+        <button id="acompanharBtn" class="home-btn">Acompanhar</button>
+        <a href="index.html" class="home-btn">Início</a>
+      </div>
+      <div id="resultFinanceiro"></div>
+  </div>
+  <script type="module" src="financeiro.js"></script>
+</body>
+</html> 

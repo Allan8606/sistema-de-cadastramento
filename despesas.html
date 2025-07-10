@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Despesas - Sistema de Cadastramento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-bg">
+  <div class="container">
+    <div class="logo-container">
+      <img src="/REALIZACRED - LOGOTIPO SEM FUNDO (1).png" alt="Logo RealizaCred" class="logo-img">
+    </div>
+    <h1>Controle de Despesas</h1>
+    <form id="despesaForm">
+      <label for="valor">Valor:</label>
+      <input type="text" id="valor" inputmode="decimal" required>
+
+      <label for="descricao">Descrição:</label>
+      <input type="text" id="descricao" required>
+
+      <label for="mes">Mês:</label>
+      <select id="mes" required style="width: 100%; padding: 10px 12px; margin: 0 0 2px 0; border: 1.2px solid #003366; border-radius: 10px; background: #f7f7f7; font-size: 1rem; transition: border 0.2s; box-sizing: border-box;">
+        <option value="">Selecione o mês</option>
+        <option value="janeiro">Janeiro</option>
+        <option value="fevereiro">Fevereiro</option>
+        <option value="marco">Março</option>
+        <option value="abril">Abril</option>
+        <option value="maio">Maio</option>
+        <option value="junho">Junho</option>
+        <option value="julho">Julho</option>
+        <option value="agosto">Agosto</option>
+        <option value="setembro">Setembro</option>
+        <option value="outubro">Outubro</option>
+        <option value="novembro">Novembro</option>
+        <option value="dezembro">Dezembro</option>
+      </select>
+
+      <button type="submit">Adicionar Despesa</button>
+    </form>
+
+    <div class="search-btns">
+      <button id="listarMesBtn">Despesa do Mês</button>
+      <button id="listarTotalBtn">Despesas Total</button>
+      <a href="index.html" class="home-btn">Início</a>
+    </div>
+
+    <div id="resultDespesas"></div>
+  </div>
+  <script type="module" src="despesas.js"></script>
+</body>
+</html> 

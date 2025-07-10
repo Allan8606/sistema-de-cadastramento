@@ -3,38 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistema de Cadastramento</title>
+  <title>Início - Sistema de Cadastramento</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="container">
+<body class="home-bg">
+  <div class="home-container">
     <div class="logo-container">
       <img src="/REALIZACRED - LOGOTIPO SEM FUNDO (1).png" alt="Logo RealizaCred" class="logo-img">
     </div>
-    <h1>Cadastramento de Clientes</h1>
-    <form id="form">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" required>
-
-      <label for="cpf">CPF:</label>
-      <input type="text" id="cpf" required>
-
-      <label for="senha">Senha:</label>
-      <input type="text" id="senha" required>
-
-      <button type="submit">Cadastrar</button>
-    </form>
-
-    <h2>Pesquisar Cliente</h2>
-    <input type="text" id="searchNome" placeholder="Digite o nome para buscar">
-    <div class="search-btns">
-      <button id="searchBtn">Pesquisar</button>
-      <button id="listAllBtn">Listar Todos</button>
+    <h1 class="home-title">Bem-vindo ao Sistema de Cadastramento</h1>
+    <div class="home-buttons">
+      <a href="clientes.html" class="home-btn">Clientes</a>
+      <a href="despesas.html" class="home-btn">Despesas</a>
+      <a href="financeiro.html" class="home-btn">Financeiro</a>
     </div>
-
-    <div id="result"></div>
   </div>
-
-  <script type="module" src="script.js"></script>
 </body>
-</html>
+</html> 
