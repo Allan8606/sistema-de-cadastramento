@@ -8,9 +8,9 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 420px;
   margin: 40px auto;
-  padding: 32px 28px 28px 28px;
+  padding: 32px 18px 28px 18px;
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
@@ -153,9 +153,25 @@ button:hover {
 .search-btns {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 18px;
   margin-top: 8px;
   margin-bottom: 8px;
+  flex-wrap: nowrap;
+}
+
+.search-btns .home-btn, .search-btns button {
+  min-width: 100px;
+  max-width: 140px;
+  width: auto;
+  padding: 10px 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 600px) {
@@ -206,5 +222,141 @@ button:hover {
   height: auto;
   border-radius: 12px;
   background: transparent;
+}
+
+/* Ajuste para a tela inicial seguir o mesmo estilo da página de clientes */
+.home-bg {
+  background: #FF6600;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.home-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 32px 28px 28px 28px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title {
+  color: #FF6600;
+  font-size: 2.2rem;
+  margin-bottom: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.home-btn {
+  background: #003366;
+  color: #fff;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background 0.2s, transform 0.1s;
+  cursor: pointer;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.home-btn:hover {
+  background: #FF6600;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    width: auto;
+    max-width: 100vw;
+    padding: 8vw 4vw 18px 4vw;
+    box-sizing: border-box;
+  }
+  .home-title {
+    font-size: 1.15rem;
+  }
+  .home-btn {
+    padding: 10px 16px;
+    font-size: 1rem;
+  }
+  .logo-img {
+    max-width: 140px;
+  }
+  .home-buttons {
+    gap: 10px;
+  }
+}
+
+.search-btns .home-btn {
+  background: #003366;
+  color: #fff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 0;
+  margin-top: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background 0.2s, transform 0.1s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.search-btns .home-btn:hover {
+  background: #FF6600;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Espaçamento entre blocos de mês em despesas totais */
+.cliente-info {
+  margin-top: 32px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+/* Botão excluir mês centralizado embaixo */
+.excluir-mes-btn {
+  display: inline-block;
+  margin: 8px 0 0 0;
+  background: #003366;
+  color: #fff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background 0.2s, transform 0.1s;
+  text-align: center;
+}
+.excluir-mes-btn:hover {
+  background: #FF6600;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
 }
   
